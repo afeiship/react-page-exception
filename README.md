@@ -1,5 +1,5 @@
-# react-page-404
-> React page not match (404).
+# react-page-exception
+> React page exception component.
 
 
 ## properties:

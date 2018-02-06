@@ -1,30 +1,30 @@
 {
-  "name": "react-page-404",
+  "name": "react-page-exception",
   "version": "0.1.0",
-  "description": "React page not match (404).",
+  "description": "React page exception component.",
   "author": "afeiship <1290657123@qq.com>",
   "keywords": [
     "components",
-    "react-page-404",
+    "react-page-exception",
     "ui",
     "theme"
   ],
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/afeiship/react-page-404.git"
+    "url": "git+https://github.com/afeiship/react-page-exception.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/afeiship/react-page-404/issues"
+    "url": "https://github.com/afeiship/react-page-exception/issues"
   },
-  "homepage": "https://github.com/afeiship/react-page-404",
+  "homepage": "https://github.com/afeiship/react-page-exception",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "docs": "node build/auto-readme.js"
   },
-  "main": "./dist/react-page-404.js",
+  "main": "./dist/react-page-exception.js",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "autoprefixer-loader": "^3.2.0",

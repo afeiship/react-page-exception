@@ -24,7 +24,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <div className="hello-react-page-404">
+      <div className="hello-react-page-exception">
         <ReactPageException actions={<button style={{ marginTop:20}} onClick={this._onClick}>返回首页</button>} ref='rc' />
     </div>
     );
