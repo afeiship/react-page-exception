@@ -80,7 +80,7 @@ class App extends React.Component{
 
 ```
 
-## import style:
+## customize style:
 ```scss
 // customize your exception styles:
 $react-page-exception-options:(
