@@ -23,7 +23,7 @@ $react-page-exception-options:(
   description-font-size:1.4em
 );
 
-@import 'node_modules/react-page-exception/style.scss';
+@import '~node_modules/react-page-exception/style.scss';
 ```
 
 ## resouces:
