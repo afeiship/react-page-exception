@@ -37,7 +37,7 @@ export default class extends Component {
           <img src={img} alt=""/>
         </div>
         <div className="react-page-exception-info">
-          <h1 className="title">{title}</h1>
+          <h3 className="title">{title}</h3>
           <p className="description">{description}</p>
           { actions }
         </div>

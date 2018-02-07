@@ -2,8 +2,8 @@
 ul,li{list-style: none;}
 
 $react-page-exception-options:(
-  base-size:8px,
-  img-width:30em,
+  base-size:10px,
+  img-width:32em,
   img-gap:2em,
   title-font-size:8em,
   description-font-size:1.4em
@@ -18,7 +18,10 @@ $react-page-exception-options:(
   margin: 0 auto;
 
   h1{
-    margin:20px auto;
+    margin:40px auto;
+    padding:10px;
+    border-left:5px solid #ccc;
+    background: #eee;
   }
   button{
     border: none;
