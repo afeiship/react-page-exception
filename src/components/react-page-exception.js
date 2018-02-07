@@ -1,5 +1,3 @@
-import './style.scss';
-
 import React, {Component} from 'react';
 
 import PropTypes from 'prop-types';
@@ -11,10 +9,12 @@ export default class extends Component {
     className: PropTypes.string,
     img: PropTypes.string,
     title: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.string,
+    align: PropTypes.string,
   };
 
   static defaultProps = {
+    align:'middle',
     title: '404',
     description: '抱歉，你访问的页面不存在',
     img: 'https://gw.alipayobjects.com/zos/rmsportal/KpnpchXsobRgLElEozzI.svg'
@@ -24,6 +24,7 @@ export default class extends Component {
   render() {
     const {
       className,
+      align,
       img,
       title,
       description,
@@ -31,12 +32,14 @@ export default class extends Component {
       ...props
     } = this.props;
     return (
-      <section className={classNames("react-page-exception", className)}>
-        <img width={300} className="react-page-exception-img" src={img} alt=""/>
+      <section {...props} data-align={align} className={classNames("react-page-exception", className)}>
+        <div className="react-page-exception-img">
+          <img src={img} alt=""/>
+        </div>
         <div className="react-page-exception-info">
           <h1 className="title">{title}</h1>
           <p className="description">{description}</p>
-          <div className="actions">{actions}</div>
+          { actions }
         </div>
       </section>
     );

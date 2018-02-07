@@ -1,10 +1,25 @@
 *{margin: 0;padding:0;box-sizing: border-box;}
 ul,li{list-style: none;}
 
+$react-page-exception-options:(
+  base-size:8px,
+  img-width:30em,
+  img-gap:2em,
+  title-font-size:8em,
+  description-font-size:1.4em
+);
+
+@import './components/style.scss';
+
 .hello-react-page-exception{
-  color:#F00;
   padding:50px 20px;
 
+  width:600px;
+  margin: 0 auto;
+
+  h1{
+    margin:20px auto;
+  }
   button{
     border: none;
     display: block;
