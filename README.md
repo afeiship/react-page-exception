@@ -23,6 +23,7 @@ npm update @feizheng/react-page-exception
 1. import css
   ```scss
   @import "~@feizheng/react-page-exception/dist/style.scss";
+  @import "~@feizheng/react-empty-state/dist/style";
 
   // customize your styles:
   $react-page-exception-options: ()
