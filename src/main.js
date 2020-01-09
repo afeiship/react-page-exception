@@ -1,2 +1,2 @@
-import ReactPageException from 'components/react-page-exception';
+import ReactPageException from './components';
 export default ReactPageException;

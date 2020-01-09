@@ -1,38 +1,22 @@
-$react-page-exception-options:(
-  base-size:10px,
-  img-width:30em,
-  img-gap:5em,
-  title-font-size:8em,
-  description-font-size:1.4em
-)!default;
+$react-page-exception-options: () !default;
 
+@import "~@feizheng/react-empty-state/dist/style";
 
 .react-page-exception {
+  .is-title {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+  }
 
-    font-size:map-get($map: $react-page-exception-options, $key: base-size);
-    display: table;
-    table-layout: fixed;
-
-    @each $direction in (top,middle,bottom){
-      &[data-align=#{$direction}]>*{
-        vertical-align: $direction;
-        display: table-cell;
-      }
-    }
-
-    &-img {
-      >img{
-        width: map-get($map: $react-page-exception-options, $key: img-width);
-        margin-right: map-get($map: $react-page-exception-options, $key: img-gap);
-      }
-    }
-
-    &-info {
-        >.title {
-          font-size: map-get($map: $react-page-exception-options, $key: title-font-size);
-        }
-        >.description {
-          font-size: map-get($map: $react-page-exception-options, $key: description-font-size);
-        }
-    }
+  &__image {
+    margin-bottom: 10px;
+  }
+  &__description {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
 }
