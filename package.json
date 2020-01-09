@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-page-exception",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React page exception component.",
   "main": "dist/index.js",
   "scripts": {
