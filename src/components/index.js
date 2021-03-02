@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
-import ReactEmptyState from '@feizheng/react-empty-state';
+import ReactEmptyState from '@jswork/react-empty-state';
 
 const CLASS_NAME = 'react-page-exception';
 
-export default class extends Component {
+export default class ReactPageException extends Component {
   static displayName = CLASS_NAME;
   static version = '__VERSION__';
   static propTypes = {
+    /**
+     * The extended className for component.
+     */
     className: PropTypes.string,
+    /**
+     * The title.
+     */
     title: PropTypes.string,
+    /**
+     * The description.
+     */
     description: PropTypes.string,
+    /**
+     * The exception icon.
+     */
     image: PropTypes.string
   };
 
@@ -49,3 +58,4 @@ export default class extends Component {
     );
   }
 }
+

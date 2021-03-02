@@ -1,6 +1,7 @@
-import ReactPageException from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactPageException from '../src/main';
 import './assets/style.scss';
 
 class App extends React.Component {
@@ -40,21 +41,23 @@ class App extends React.Component {
 
   render() {
     const { items, value } = this.state;
-    console.log('value:', value, this.value);
     return (
-      <div className="app-container">
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-page-exception">
+        <div className="select is-fullwidth is-rounded">
+          <select name="sel1" onChange={this.onChange}>
+            {items.map((item, index) => {
+              return (
+                <option key={index} value={item.title}>
+                  {item.title}
+                </option>
+              );
+            })}
+          </select>
+        </div>
         <ReactPageException {...this.value} />
-
-        <select name="sel1" onChange={this.onChange}>
-          {items.map((item, index) => {
-            return (
-              <option key={index} value={item.title}>
-                {item.title}
-              </option>
-            );
-          })}
-        </select>
-      </div>
+      </ReactDemokit>
     );
   }
 }
