@@ -1,0 +1,25 @@
+@import '@jswork/react-empty-state/dist/style.scss';
+
+.react-page-exception {
+  --centered: 42.5%;
+  width: 400px;
+  .is-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+  }
+
+  &__image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  &__description {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+  }
+}
