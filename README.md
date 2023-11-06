@@ -1,2 +1,2 @@
-# react-component-library
-> A react component library template.
+# react-page-exception
+> React page exception component.
