@@ -2,10 +2,12 @@
 
 .react-page-exception {
   --centered: 42.5%;
+  --title-font-size: 50px;
+
   width: 400px;
   .is-title {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
+    font-size: var(--title-font-size);
     line-height: 1.8;
     text-align: center;
     color: #333;
