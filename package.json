@@ -9,11 +9,11 @@
   ],
   "dependencies": {},
   "scripts": {
-    "dev": "cd packages/example && npm run dev",
+    "dev": "cd packages/example && yarn run dev",
     "predocs": "rm -rf docs",
-    "docs": "cd packages/example && npm run build",
+    "docs": "cd packages/example && yarn run build",
     "postdocs": "cp -R packages/example/dist docs",
-    "ln:build": "cd packages/lib && npm run build",
-    "ln:publish": "cd packages/lib && npm run release"
+    "ln:build": "yarn run build --cwd packages/lib",
+    "ln:publish": "cd packages/lib && yarn run release"
   }
 }
